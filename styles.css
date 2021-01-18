@@ -1,0 +1,41 @@
+body {
+	background-color: black;
+	font-family: Ubuntu;
+}
+
+img {
+	width  : 900px;
+	height : 720px;
+	border : 2px solid #F69680;
+}
+
+
+#full {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+}
+
+h1 {
+	color : red;
+	font-size: 3rem;
+	margin-bottom : 10px;
+	margin-top: 10px;
+}
+
+h2 {
+	color : blue;
+	font-size: 2rem;
+	margin-top: 10px;
+	margin-bottom : 10px;
+}
+
+#explanation {
+	color : aquamarine;
+	margin-top: 10px;
+}
+
+p {
+	color: aqua;
+}
