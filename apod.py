@@ -1,3 +1,6 @@
+
+# Please read the README.txt file
+
 import urllib.request
 import urllib.parse
 import urllib.error
@@ -104,7 +107,7 @@ else:
 # Here, we're writing our retrieved data to a JavaScript file called variables.js
 # The app.js is going to retrieve the data from variables.js and put it into the index.html file. 
 # Just think the variables.js as the connection between our Python script and the JavaScript of HTML
-# Actually I don't know any JavaScript. I just cruised the web to learn something when writing this project. 
+# Actually I didn't know any JavaScript. I just cruised through the web to learn something when writing this project. 
 variables = open("variables.js", "w")
 var_data = "var vars = \n"
 var_data += str(data)
