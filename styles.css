@@ -1,18 +1,38 @@
 body {
-	background-color: black;
+	background-color: #F69680;
 	font-family: Ubuntu;
 }
 
 img {
-    transition: 0.5s;
+	transition: 0.5s;
 	width  : 900px;
 	height : 720px;
-	border : 2px solid #F69680;
+	border : 2px solid #ff0095;
 }
 
 img:hover {
-    transition: 0.5s;
-    border : 2px solid #2E1263;
+	transition: 0.5s;
+	border : 2px solid #2E1263;
+}
+
+#switch {
+	transition: 1s;
+	background-color: #00ccff;
+	font-family: Source-Code-Pro;
+	color: #2E1263;
+	border: none;
+	height : 40px;
+	width  : 250px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 19px;
+}
+
+#switch:hover {
+	transition: 1s;
+	background-color: #2E1263;
+	color:  #F69680;
 }
 
 #full {
@@ -23,24 +43,25 @@ img:hover {
 }
 
 h1 {
-	color : red;
+	color :  #2E1263;
 	font-size: 3rem;
 	margin-bottom : 10px;
 	margin-top: 10px;
 }
 
 h2 {
-	color : blue;
+	color : #e20c77;
 	font-size: 2rem;
 	margin-top: 10px;
 	margin-bottom : 10px;
 }
 
 #explanation {
-	color : aquamarine;
+	color : #63012a;
 	margin-top: 10px;
+	font-size: 17px;
 }
 
 p {
-	color: aqua;
+	color: rgb(85, 0, 134);
 }
