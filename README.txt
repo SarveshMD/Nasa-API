@@ -40,3 +40,47 @@ Explanation of each file :
 
 4) styles.css
 	-> Styles the index.html. Just try moving the styles.css file to somewhere other than the same directory as index.html and see what happens to index.html. 
+
+Finally, Here's the part which explains the Limitations of using DEMO_KEY as the API KEY for retrieving data from NASA API. 
+First, let me give you a summary of what's coming next. 
+
+With DEMO_KEY as the API Key, you are limited to, 
+	-> 30 Requests per IP address per hour, That is, probably 30 requests per hour with a device.
+	-> 50 Requests per IP address per day, That is, probably 50 requests per day with a device.
+
+But with your API Key, you are limited to, 
+	-> 1000 requests per hour. That is 24,000 requests per day.
+
+If you are wondering of how to get an API key, It's a two click job.
+	-> Head to https://api.nasa.gov/
+	-> Scroll down a bit until you see the Generate API Key heading.
+	-> Go ahead and give your Name and Email Address and hit the signup button.
+	-> You should see your API Key in the page once you hit the signup button and that's it. 
+
+############################     This is the original notes on Request Limits copied from NASA's https://api.nasa.gov website.     ############################
+
+Web Service Rate Limits
+Limits are placed on the number of API requests you may make using your API key. Rate limits may vary by service, but the defaults are:
+
+Hourly Limit: 1,000 requests per hour
+For each API key, these limits are applied across all api.nasa.gov API requests. Exceeding these limits will lead to your API key being temporarily blocked from making further requests. The block will automatically be lifted by waiting an hour. If you need higher rate limits, contact us.
+
+DEMO_KEY Rate Limits
+In documentation examples, the special DEMO_KEY api key is used. This API key can be used for initially exploring APIs prior to signing up, but it has much lower rate limits, so you’re encouraged to signup for your own API key if you plan to use the API (signup is quick and easy). The rate limits for the DEMO_KEY are:
+
+Hourly Limit: 30 requests per IP address per hour
+Daily Limit: 50 requests per IP address per day
+How Do I See My Current Usage?
+Your can check your current rate limit and usage details by inspecting the X-RateLimit-Limit and X-RateLimit-Remaining HTTP headers that are returned on every API response. For example, if an API has the default hourly limit of 1,000 request, after making 2 requests, you will receive this HTTP header in the response of the second request:
+
+X-RateLimit-Remaining: 998
+
+The hourly counters for your API key reset on a rolling basis.
+
+Example: If you made 500 requests at 10:15AM and 500 requests at 10:25AM, your API key would become temporarily blocked. This temporary block of your API key would cease at 11:15AM, at which point you could make 500 requests. At 11:25AM, you could then make another 500 requests.
+
+Anyone can register for an api.nasa.gov key, which can be used to access data across federal agencies.
+
+############################                                End of notes copied from NASA's website                                ############################
+
+								Have fun with the NASA API !!!
