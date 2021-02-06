@@ -1,5 +1,6 @@
 Contents of the Repository :
 	--> apod.py
+	--> reset.py
 	--> app.js
 	--> index.html
 	--> styles.css
@@ -32,13 +33,18 @@ Explanation of each file :
 	-> In index.html, both app.js and variables.js are linked with a script tag. So, app.js can get the data from variables.js. 
 	-> Then, app.js is going to fill all the placeholders in index.html. The placeholders are going to be the retrieved data only.
 
-2) app.js
+2) reset.py
+	-> Imports os for deleting APOD.sqlite
+	-> Deletes APOD.sqlite
+	-> Opens variables.js and truncates it
+
+3) app.js
 	-> Selects the placeholders in index.html and replaces them with the data in variables.js file. 
 
-3) index.html
+4) index.html
 	-> Has the skeleton of the project. Contains the default things like the main header and title and has lot of placeholders which will be filled by app.js
 
-4) styles.css
+5) styles.css
 	-> Styles the index.html. Just try moving the styles.css file to somewhere other than the same directory as index.html and see what happens to index.html. 
 
 Finally, Here's the part which explains the Limitations of using DEMO_KEY as the API KEY for retrieving data from NASA API. 
